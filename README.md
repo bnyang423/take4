@@ -1,4 +1,3 @@
-# take4
 import turtle
 
 def quadratic_function(x, a, b, c):
@@ -10,8 +9,8 @@ def draw_quadratic_function(a, b, c):
     t = turtle.Turtle()
     t.speed(0)
 
-    # Draw the x and y axes
-    t.penup()
+# Draw the x and y axes
+t.penup()
     t.goto(-10, 0)
     t.pendown()
     t.goto(10, 0)
@@ -21,11 +20,11 @@ def draw_quadratic_function(a, b, c):
     t.goto(0, 10)
     t.penup()
 
-    # Draw the quadratic function
-    t.goto(-10, quadratic_function(-10, a, b, c))
+    
+t.goto(-10, quadratic_function(-10, a, b, c))
     t.pendown()
     for x in range(-100, 101):
         x = x / 10
         t.goto(x, quadratic_function(x, a, b, c))
 
-    screen.mainloop()
+ screen.mainloop()
