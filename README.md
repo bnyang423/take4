@@ -23,4 +23,4 @@ def draw_quadratic_function(a, b, c):
         x = x / 10
         t.goto(x, quadratic_function(x, a, b, c))
 
- screen.mainloop()
+    screen.mainloop()
